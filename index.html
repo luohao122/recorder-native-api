@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- <p>
+      Solution 1: Ask user to pick an audio file from their devices
+    </p>
+    <input type="file" accept="audio/*" capture id="recorder" />
+    <audio id="player" controls></audio> -->
+
+    <hr />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>
+            Solution 2: Use getUserMedia() to access their devices microphone or
+            camera
+          </p>
+        </div>
+        <div class="col-sm-12">
+          <div class="mb-3" id="audioPlayer">
+            <audio id="userPlayer" controls></audio>
+          </div>
+          <div id="controls-set">
+            <button class="btn btn-success" id="action">
+              Start recording...
+            </button>
+            <button class="btn btn-danger" id="stop">Stop</button>
+            <a class="btn btn-warning" id="download">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="recorder.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
